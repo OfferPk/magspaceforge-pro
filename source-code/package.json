@@ -1,0 +1,22 @@
+{
+  "name": "magspace-forge-pro",
+  "version": "1.0.0",
+  "description": "ECSS-E-ST-60-30C & ECSS-E-ST-20-07C Rev. 2 Spacecraft Magnetic Cleanliness, IGRF-13 Geomagnetic Field & Magnetic Torquer Attitude Actuation Studio",
+  "main": "magspace-engine.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "aerospace",
+    "spacecraft",
+    "ecss",
+    "attitude-control",
+    "magnetic-torquer",
+    "aocs",
+    "geomagnetic-field",
+    "magnetic-cleanliness"
+  ],
+  "author": "Autonomous Digital Product Factory",
+  "license": "MIT"
+}

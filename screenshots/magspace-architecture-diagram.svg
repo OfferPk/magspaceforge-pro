@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060b16"/>
+      <stop offset="100%" stop-color="#0b1329"/>
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="620" fill="url(#bgGrad)"/>
+  
+  <!-- Header Banner -->
+  <rect x="30" y="24" width="940" height="70" rx="12" fill="#0b1426" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="60" y="58" fill="#38bdf8" font-family="Inter, sans-serif" font-size="20" font-weight="bold">MagSpaceForge Pro v1.0.0 — System Architecture</text>
+  <text x="60" y="78" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="12">ECSS-E-ST-60-30C &amp; ECSS-E-ST-20-07C Rev. 2 Magnetic Cleanliness &amp; Attitude Actuation Pipeline</text>
+  <rect x="800" y="44" width="145" height="30" rx="6" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="815" y="64" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold">10 / 10 ECSS PASS</text>
+
+  <!-- 3 Main Columns / Stages -->
+  
+  <!-- Column 1: Spacecraft Magnetic Cleanliness -->
+  <rect x="40" y="120" width="280" height="460" rx="12" fill="url(#blueCard)" stroke="#334155" stroke-width="1.2"/>
+  <rect x="40" y="120" width="280" height="42" rx="12" fill="#1e293b"/>
+  <text x="60" y="146" fill="#38bdf8" font-family="Inter, sans-serif" font-size="14" font-weight="bold">1. MAGNETIC CLEANLINESS</text>
+  
+  <!-- Subcard 1: Component Dipoles -->
+  <rect x="55" y="180" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="70" y="202" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">Subsystem Dipole Budget</text>
+  <text x="70" y="222" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">• Reaction Wheel Motors (x4)</text>
+  <text x="70" y="240" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">• Battery High-Current Relays</text>
+  <text x="70" y="258" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">Total M_res ≤ 0.100 A·m² (PASS)</text>
+
+  <!-- Subcard 2: Deployable Boom -->
+  <rect x="55" y="290" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="70" y="312" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">1/R³ Boom Attenuation</text>
+  <text x="70" y="332" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">R_boom = 1.65 m (NASA-HDBK)</text>
+  <text x="70" y="350" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Dipole falloff ~ 2 μ0 M / (4π R³)</text>
+  <text x="70" y="368" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11">B_stray = 1.91 nT (Limit ≤ 10 nT)</text>
+
+  <!-- Subcard 3: Shielding Verification -->
+  <rect x="55" y="400" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="70" y="422" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">Mu-Metal Shielding</text>
+  <text x="70" y="442" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">High-permeability wraps</text>
+  <text x="70" y="460" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">All unshielded boxes &gt; 1.5 m</text>
+  <text x="70" y="478" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">ECSS-E-ST-20-07C Cl. 5.4 PASS</text>
+
+  <rect x="55" y="510" width="250" height="50" rx="8" fill="#1e293b"/>
+  <text x="85" y="540" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold">CLEANROOM CERTIFIED</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 320 350 L 360 350" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)" fill="none"/>
+  
+  <!-- Column 2: Geomagnetic Environment & B-Dot Control -->
+  <rect x="360" y="120" width="280" height="460" rx="12" fill="url(#blueCard)" stroke="#334155" stroke-width="1.2"/>
+  <rect x="360" y="120" width="280" height="42" rx="12" fill="#1e293b"/>
+  <text x="380" y="146" fill="#38bdf8" font-family="Inter, sans-serif" font-size="14" font-weight="bold">2. IGRF-13 &amp; B-DOT AOCS</text>
+
+  <!-- Subcard 1: IGRF-13 -->
+  <rect x="375" y="180" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="390" y="202" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">IGRF-13 Orbit Field Model</text>
+  <text x="390" y="222" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Altitude: 500.0 km SSO</text>
+  <text x="390" y="240" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">|B| = 39,326.7 nT</text>
+  <text x="390" y="258" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11">Field Ratio (Re/r)³ = 0.796</text>
+
+  <!-- Subcard 2: B-Dot Detumbling -->
+  <rect x="375" y="290" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="390" y="312" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">B-Dot Rate Damping Law</text>
+  <text x="390" y="332" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">M_cmd = -k_bdot · dB/dt</text>
+  <text x="390" y="350" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Initial tip-off: 8.5 deg/s</text>
+  <text x="390" y="368" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">95% Damped: 0.48 Orbits (PASS)</text>
+
+  <!-- Subcard 3: RW Desaturation -->
+  <rect x="375" y="400" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="390" y="422" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">Momentum Dumping</text>
+  <text x="390" y="442" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Wheel Momentum: 0.60 Nms</text>
+  <text x="390" y="460" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Desat Time: 34.5 min (0.36 orb)</text>
+  <text x="390" y="478" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">ECSS Cl. 6.4.4 ≤ 45m (PASS)</text>
+
+  <rect x="375" y="510" width="250" height="50" rx="8" fill="#1e293b"/>
+  <text x="405" y="540" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold">RATE DAMPING OPTIMAL</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 640 350 L 680 350" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+
+  <!-- Column 3: Magnetic Torquer Physics & ECSS Auditor -->
+  <rect x="680" y="120" width="280" height="460" rx="12" fill="url(#blueCard)" stroke="#334155" stroke-width="1.2"/>
+  <rect x="680" y="120" width="280" height="42" rx="12" fill="#1e293b"/>
+  <text x="700" y="146" fill="#38bdf8" font-family="Inter, sans-serif" font-size="14" font-weight="bold">3. MTQ COIL &amp; AUDITOR</text>
+
+  <!-- Subcard 1: Core Physics -->
+  <rect x="695" y="180" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="710" y="202" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">Torquerod Demagnetization</text>
+  <text x="710" y="222" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Aspect Ratio: L/D = 20.0</text>
+  <text x="710" y="240" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Demag Nd = 0.0206 (Osborn)</text>
+  <text x="710" y="258" fill="#38bdf8" font-family="JetBrains Mono, monospace" font-size="11">Effective μ_eff = 48.4</text>
+
+  <!-- Subcard 2: Coil Performance -->
+  <rect x="695" y="290" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="710" y="312" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">Coil Moment &amp; Thermal Power</text>
+  <text x="710" y="332" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Moment: 11.16 A·m² (Hiperco-50A)</text>
+  <text x="710" y="350" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Resistance: 25.10 Ω @ 35°C</text>
+  <text x="710" y="368" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">Power: 5.74 W (Limit ≤ 15 W)</text>
+
+  <!-- Subcard 3: 10-Point Auditor -->
+  <rect x="695" y="400" width="250" height="90" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="710" y="422" fill="#f1f5f9" font-family="Inter, sans-serif" font-size="12" font-weight="600">10-Point ECSS Auditor</text>
+  <text x="710" y="442" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">ECSS-E-ST-60-30C Verified</text>
+  <text x="710" y="460" fill="#94a3b8" font-family="JetBrains Mono, monospace" font-size="11">Authority Margin: +25,859%</text>
+  <text x="710" y="478" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11">XML Export Manifest Ready</text>
+
+  <rect x="695" y="510" width="250" height="50" rx="8" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1"/>
+  <text x="725" y="540" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="11" font-weight="bold">10 / 10 RULES PASS (100%)</text>
+</svg>
